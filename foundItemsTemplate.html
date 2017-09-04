@@ -1,0 +1,12 @@
+<div>
+<ol>
+	
+  <li ng-repeat="item in Directivelist.items">
+    <div>
+      <h4>{{item.name}} <button ng-click="Directivelist.onRemove({index: $index});">Don't want this one!</button></h4>
+      <div><b>{{item.short_name}}</b>: {{item.description}}</div>
+    </div>
+  </li>
+</ol>
+<span class="error">Nothing Found</span>
+</div>
